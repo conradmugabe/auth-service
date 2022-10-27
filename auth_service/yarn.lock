@@ -707,6 +707,14 @@
     tslib "2.4.0"
     uuid "9.0.0"
 
+"@nestjs/microservices@^9.1.6":
+  version "9.1.6"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-9.1.6.tgz#0eab2e42dd6d1e7562556d43ca688bdf2fa084a8"
+  integrity sha512-ppcA+ihIEJRvjpGc/ognlWwpp3Kra6wyH66BvqWJiNQa8T44V4Jrgn4mhQkd91TuVlGVS2vhG2KGeColLb70Sw==
+  dependencies:
+    iterare "1.2.1"
+    tslib "2.4.0"
+
 "@nestjs/platform-express@^9.0.0":
   version "9.1.6"
   resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-9.1.6.tgz#01e0dc29bb02d1a3820a5da4f2a0a534b97c75cb"
