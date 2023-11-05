@@ -1,3 +1,5 @@
+import { LoginProviders } from "./_components/login-providers";
+
 export default function Home() {
   return (
     <main className="flex h-screen w-screen flex-col items-center justify-center gap-10 bg-black text-white">
@@ -7,7 +9,7 @@ export default function Home() {
       <div className="items-center rounded-full bg-white px-5 py-1.5 text-sm font-semibold text-black">
         lading page
       </div>
-      
+      <LoginProviders />
     </main>
   );
 }
