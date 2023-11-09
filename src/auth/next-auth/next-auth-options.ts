@@ -1,10 +1,13 @@
 import { AuthOptions } from "next-auth";
 import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
+import { FirestoreAdapter } from "@auth/firebase-adapter";
 
 import env from "@/utils/env";
+import { firestore } from "@/utils/firebase";
 
 export const nextAuthOptions: AuthOptions = {
+  adapter: FirestoreAdapter(firestore),
   providers: [
     GitHubProvider({
       clientId: env.GITHUB_ID,
@@ -15,5 +18,4 @@ export const nextAuthOptions: AuthOptions = {
       clientSecret: env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  pages: {},
 };
