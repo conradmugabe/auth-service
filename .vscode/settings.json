@@ -2,12 +2,15 @@
   "cSpell.words": [
     "APIKEY",
     "AUTHDOMAIN",
+    "Codegen",
     "DATABASEURL",
+    "datetime",
     "envalid",
     "MESSAGINGSENDERID",
     "NEXTAUTH",
     "nextjs",
     "PROJECTID",
-    "STORAGEBUCKET"
+    "STORAGEBUCKET",
+    "Xata"
   ]
 }
