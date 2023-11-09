@@ -13,7 +13,7 @@ export default async function Page() {
   return (
     <main>
       <nav>
-        <UserButton />
+        <UserButton  />
       </nav>
       <section className="flex min-h-screen flex-col items-center justify-center gap-10">
         <p className="text-2xl">

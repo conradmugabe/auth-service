@@ -13,7 +13,7 @@ export function LoginProviders() {
       {providers.map(({ provider, label }) => (
         <button
           key={provider}
-          className="h-10 w-40 rounded bg-gray-900 px-4 py-2"
+          className="h-10 w-40 rounded bg-gray-900 px-4 py-2 text-white"
           onClick={async () => await signIn(provider)}
         >
           {label}
