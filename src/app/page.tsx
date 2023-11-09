@@ -12,7 +12,7 @@ export default function Home() {
       <LoginProviders />
       <SignedIn>
         {/* Mount the UserButton component */}
-        <UserButton />
+        <UserButton afterSignOutUrl="/" />
       </SignedIn>
       <SignedOut>
         {/* Signed out users get sign in button */}
