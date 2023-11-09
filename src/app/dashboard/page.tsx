@@ -15,7 +15,7 @@ export default async function Page() {
       <nav>
         <UserButton />
       </nav>
-      <section className="flex flex-col gap-10 min-h-screen items-center justify-center">
+      <section className="flex min-h-screen flex-col items-center justify-center gap-10">
         <p className="text-2xl">
           userId <span className="font-bold">{userId}</span>
         </p>
