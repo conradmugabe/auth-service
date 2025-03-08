@@ -1,7 +1,9 @@
-import { describe, it, expect } from 'vitest';
+import { app } from '../src/index';
 
-describe('Example test suite', () => {
-  it('should pass', () => {
-    expect(1 + 1).toBe(2);
+describe('Express App', () => {
+  it('should export an Express application', () => {
+    expect(app()).toBeDefined();
+    expect(typeof app()).toBe('function');
+    expect(app().listen).toBeDefined();
   });
 });

@@ -12,10 +12,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^22.13.9",
+    "@types/supertest": "^6.0.2",
     "@vitest/coverage-istanbul": "^3.0.8",
+    "supertest": "^7.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
     "vitest": "^3.0.8"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }
