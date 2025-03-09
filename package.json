@@ -19,7 +19,8 @@
     "supertest": "^7.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
-    "vitest": "^3.0.8"
+    "vitest": "^3.0.8",
+    "vitest-mock-extended": "^3.0.1"
   },
   "dependencies": {
     "express": "^4.21.2"
