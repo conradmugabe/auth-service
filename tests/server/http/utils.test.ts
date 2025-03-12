@@ -1,11 +1,11 @@
-import express from 'express';
-import { MockProxy, mock } from 'vitest-mock-extended';
+import express from "express";
+import { MockProxy, mock } from "vitest-mock-extended";
 
-import { Router } from '../../../src/server/http/interface';
-import { combineRouters } from '../../../src/server/http/utils';
+import { Router } from "../../../src/server/http/interface";
+import { combineRouters } from "../../../src/server/http/utils";
 
-describe('HTTP Utils', () => {
-  describe('combineRouters', () => {
+describe("HTTP Utils", () => {
+  describe("combineRouters", () => {
     let mockRouter1: MockProxy<Router>;
     let mockRouter2: MockProxy<Router>;
 
@@ -19,14 +19,14 @@ describe('HTTP Utils', () => {
       // Mock express Router and its use method
       mockUse = vi.fn();
       mockExpressRouter = { use: mockUse } as unknown as express.Router;
-      vi.spyOn(express, 'Router').mockReturnValue(mockExpressRouter);
+      vi.spyOn(express, "Router").mockReturnValue(mockExpressRouter);
 
       return () => {
         vi.restoreAllMocks();
       };
     });
 
-    it('should combine multiple routers correctly', () => {
+    it("should combine multiple routers correctly", () => {
       const result = combineRouters([mockRouter1, mockRouter2]);
 
       // Verify express.Router was called
@@ -41,7 +41,7 @@ describe('HTTP Utils', () => {
       expect(result).toBe(mockExpressRouter);
     });
 
-    it('should return an empty router when given an empty array', () => {
+    it("should return an empty router when given an empty array", () => {
       const result = combineRouters([]);
 
       // Verify express.Router was called
@@ -54,7 +54,7 @@ describe('HTTP Utils', () => {
       expect(result).toBe(mockExpressRouter);
     });
 
-    it('should work with a single router', () => {
+    it("should work with a single router", () => {
       const result = combineRouters([mockRouter1]);
 
       // Verify express.Router was called

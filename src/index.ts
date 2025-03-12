@@ -1,7 +1,7 @@
-import express from 'express';
+import express from "express";
 
-import { combineRouters } from './server/http/utils';
-import { AuthRouter } from './server/http/auth/index';
+import { combineRouters } from "./server/http/utils";
+import { AuthRouter } from "./server/http/auth/index";
 
 const PORT = 3000;
 

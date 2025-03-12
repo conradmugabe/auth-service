@@ -1,6 +1,6 @@
-import express from 'express';
+import express from "express";
 
-import { Router } from './interface';
+import { Router } from "./interface";
 
 export function combineRouters(routers: Router[]): express.Router {
   const router = express.Router();
