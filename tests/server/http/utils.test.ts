@@ -34,8 +34,8 @@ describe('HTTP Utils', () => {
 
       // Verify router.use was called for each router
       expect(mockUse).toHaveBeenCalledTimes(2);
-      expect(mockUse).toHaveBeenNthCalledWith(1, mockRouter1.getRouter);
-      expect(mockUse).toHaveBeenNthCalledWith(2, mockRouter2.getRouter);
+      expect(mockUse).toHaveBeenNthCalledWith(1, mockRouter1.getRouter());
+      expect(mockUse).toHaveBeenNthCalledWith(2, mockRouter2.getRouter());
 
       // Verify the result is the combined router
       expect(result).toBe(mockExpressRouter);
@@ -62,7 +62,7 @@ describe('HTTP Utils', () => {
 
       // Verify router.use was called once with the correct router
       expect(mockUse).toHaveBeenCalledTimes(1);
-      expect(mockUse).toHaveBeenCalledWith(mockRouter1.getRouter);
+      expect(mockUse).toHaveBeenCalledWith(mockRouter1.getRouter());
 
       // Verify the result is the combined router
       expect(result).toBe(mockExpressRouter);
